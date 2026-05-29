@@ -8,19 +8,21 @@ function calcular(){
     if(tipoJuros == "jurosSimples"){
         let juros = capital * taxa * tempo;
         let montante = capital + juros
-        alert("Seu montante é R$:" + montante + "\n" + "O juros é de R$" + juros);
+        resultado = ("Seu montante é R$:" + montante + "\n" + "O juros é de R$" + juros);
     }
 
     else if(tipoJuros == "jurosC"){
         let montanteC = capital * (1 + taxa) ** tempo;
         let jurosComposto = montanteC - capital;
         
-        alert("Seu montante é R$:" + montanteC.toFixed(2) + "\n" + "O juros é de R$" + jurosComposto.toFixed(2));
+        resultado = ("Seu montante é R$:" + montanteC.toFixed(2) + "\n" + "O juros é de R$" + jurosComposto.toFixed(2));
     }
 
     else{
-        alert("Você não selecionou o tipo de juros");
+        resultado = ("Você não selecionou o tipo de juros");
     }
+
+    document.getElementById("resultado").innerText = resultado;
 
 }
 

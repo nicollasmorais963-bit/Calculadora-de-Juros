@@ -1,67 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagina.css">
-    <title>Document</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagina.css">
+  <title>Juros Simples e Compostos</title>
 
+
+</head>
 <body>
 
-    <h1>Juros Simples e Compostos</h1> <br>
-    <p>Os juros simples e compostos são cálculos efetuados com o objetivo de corrigir os valores envolvidos nas <br>
-        transações financeiras, isto é, a correção que se faz ao emprestar ou aplicar uma determinada quantia durante um
-        <br>
-        período de tempo.
-    </p> <br>
+  <h1>Juros Simples e Juros Compostos</h1>
 
-    <p>O valor pago ou resgatado dependerá da taxa cobrada pela operação e do período que o dinheiro ficará emprestado
-        <br>
-        ou aplicado. Quanto maior a taxa e o tempo, maior será este valor.
+  <div class="container">
 
-    </p> <br>
+    <!-- JUROS SIMPLES -->
+    <div class="card">
+      <h2>Juros Simples</h2>
 
-    <hr>
+      <p>
+        Os <span class="destaque">juros simples</span> são calculados apenas
+        sobre o valor inicial da aplicação ou dívida.
+      </p>
 
-    <h1>Fórmula de Juros Simples</h1>
-    <strong>J = C.I.T</strong>
+      <div class="formula">
+        J = C × i × t
+      </div>
 
-    <p>Sendo, <br> <br>
+      <ul>
+        <li><strong>J</strong> = juros</li>
+        <li><strong>C</strong> = capital inicial</li>
+        <li><strong>i</strong> = taxa de juros</li>
+        <li><strong>t</strong> = tempo</li>
+      </ul>
 
-        J: juros <br>
-        C: valor inicial da transação, chamado em matemática financeira de capital <br>
-        i: taxa de juros (valor normalmente expresso em porcentagem) <br>
-        t: período da transação</p>
+      <p>
+        Exemplo:
+      </p>
 
-    <br>
+      <p>
+        Um capital de R$1000 aplicado a uma taxa de 10% ao mês durante
+        3 meses:
+      </p>
 
-    <p>Podemos ainda calcular o valor total que será resgatado ou o valor a ser quitado ao final de um período
-        predeterminado.
+      <div class="formula">
+        J = 1000 × 0,10 × 3 = R$300
+      </div>
 
-        Esse valor, chamado de montante, é igual a soma do capital com os juros, ou seja:</p>
+      <p>
+        Montante final:
+      </p>
 
-    <strong>M = C + J</strong>
+      <div class="formula">
+        M = C + J = 1000 + 300 = R$1300
+      </div>
+    </div>
 
-    <hr>
+    <!-- JUROS COMPOSTOS -->
+    <div class="card">
+      <h2>Juros Compostos</h2>
 
-    <h1>Fórmula Juros Compostos</h1>
-    <p>O montante capitalizado a juros compostos é encontrado aplicando a seguinte fórmula:</p>
-    <strong>M = C(1 + i)</strong>
-    <p>Sendo, <br> <br>
+      <p>
+        Os <span class="destaque">juros compostos</span> são calculados sobre
+        o valor atualizado a cada período.
+      </p>
 
-        M: montante <br>
-        C: capital <br>
-        i: taxa de juros <br>
-        t: período de tempo</p> <br>
+      <div class="formula">
+        M = C × (1 + i)<sup>t</sup>
+      </div>
 
-    <p>Diferente dos juros simples, neste tipo de capitalização, a fórmula para o cálculo do montante envolve uma <br>
-        variação exponencial. Daí se explica que o valor final aumente consideravelmente para períodos maiores.</p>
+      <ul>
+        <li><strong>M</strong> = montante final</li>
+        <li><strong>C</strong> = capital inicial</li>
+        <li><strong>i</strong> = taxa de juros</li>
+        <li><strong>t</strong> = tempo</li>
+      </ul>
 
+      <p>
+        Exemplo:
+      </p>
 
+      <p>
+        Um capital de R$1000 aplicado a 10% ao mês durante 3 meses:
+      </p>
 
+      <div class="formula">
+        M = 1000 × (1 + 0,10)<sup>3</sup>
+      </div>
+
+      <div class="formula">
+        M = 1000 × 1,331 = R$1331
+      </div>
+
+      <p>
+        Nesse caso, os juros rendem sobre os juros anteriores.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    ©2026 todos meus direitos reservados | Nícollas Morais
+  </footer>
 
 </body>
-
 </html>
