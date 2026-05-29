@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(200deg,indigo, black 80%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+strong{
+    color: white;
+    font-size: 30px;
+}

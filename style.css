@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.card {
+    width: 300px;
+    height: 450px;
+     background: linear-gradient(300deg, indigo, black );
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+body{
+    /* background: linear-gradient(140deg, indigo, black 80%); */
+    background-image: url(./imagem/graficoIndigo.png);
+    background-size: cover;
+}
+
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+input {
+    
+    width: 270px;
+  padding: 5px;
+  border: 2px solid indigo  ;
+  border-radius: 4px;
+  background-color: #1e1e2f;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+input:hover{
+    border-color: #818cf8;
+}
+
+input:focus{
+    box-shadow: #818cf8;
+}
+
+
+
+
+
+
+
+
+h2{
+    color: white;
+    display: flex;
+justify-content: center;
+position: relative;
+bottom: 550px;
+}
+
+h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    position: relative;
+    left: 30px;
+}
+
+button{
+   width: 270px;
+  padding: 5px;
+  border: 2px solid indigo;
+  border-radius: 4px;
+  background-color: #1e1e2f;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+  left: 3px;
+}
+
+button:hover {
+    scale: 1.1;
+    border-color: #818cf8;
+    transition-delay: 1ms;
+    transition-duration: 300ms;
+
+}
+
+button:focus{
+    box-shadow: #818cf8;
+}
+
+.titulo{
+    position: relative;
+    bottom: 575px;
+
+}
+
+select {
+  width: 220px;
+  padding: 10px;
+  border: 2px solid indigo;
+  border-radius: 4px;
+  background-color: #1e1e2f;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+select:hover {
+  border-color: #818cf8;
+}
+
+select:focus {
+  box-shadow: 0 0 10px #818cf8;
+}
+
+
+
+.texto{
+    width: 320px;
+    height: 200px;
+      background: linear-gradient(300deg, indigo, black );
+    border-radius: 20px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 600px;
+    left: 100px;
+    
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+
+.juros{
+    color: rgb(209, 8, 209);
+    position: relative;
+    bottom: 800px;
+    left: 330px;
+}
+
+
+
